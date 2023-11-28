@@ -1,10 +1,14 @@
 "use strict"
 document.addEventListener("DOMContentLoaded", function () {
-    let postCards = document.querySelectorAll(".postCard");
-    postCardsPlacement(postCards);
-    window.addEventListener("resize", function () {
+    document.body.style.opacity = "0";
+    window.onload = function () {
+        document.body.style.opacity = "1";
+        let postCards = document.querySelectorAll(".postCard");
         postCardsPlacement(postCards);
-    })
+        window.addEventListener("resize", function () {
+            postCardsPlacement(postCards);
+        })
+    }
 });
 function postCardsPlacement(postCards) {
     if (window.innerWidth > 899) {

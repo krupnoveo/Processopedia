@@ -97,6 +97,10 @@ function searchWindow() {
 	})
 }
 document.addEventListener("DOMContentLoaded", function() {
-	menuWindow();
-	searchWindow();
+	document.body.style.opacity = "0";
+	window.onload = function () {
+		document.body.style.opacity = "1";
+		menuWindow();
+		searchWindow();
+	}
 });
