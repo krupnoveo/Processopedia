@@ -1,10 +1,10 @@
 "use strict"
 document.addEventListener("DOMContentLoaded", function () {
     document.body.style.opacity = "0";
-    document.body.style.userSelect = "none";
+    document.body.style.display = "none";
     window.onload = function () {
         document.body.style.opacity = "1";
-        document.body.style.userSelect = "auto";
+        document.body.style.display = "block";
         let postCards = document.querySelectorAll(".postCard");
         postCardsPlacement(postCards);
         window.addEventListener("resize", function () {
