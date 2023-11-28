@@ -12,7 +12,7 @@ function menuWindow() {
 			mobileNavMenu.style.zIndex = "3";
 			mobileNavMenu.style.opacity = "1";
 			scrollArea.style.height = "100vh";
-			if (document.location.pathname.slice(-1) === "/") {
+			if (document.location.pathname.slice(-1) === "/" || document.location.pathname.slice(-10) === "index.html") {
 				hiddenMenuImg.setAttribute("src", "./images/cross.svg");
 			} else {
 				hiddenMenuImg.setAttribute("src", "../images/cross.svg");
@@ -24,7 +24,7 @@ function menuWindow() {
 			mobileNavMenu.style.zIndex = "-1";
 			mobileNavMenu.style.opacity = "0";
 			scrollArea.style.height = "100%";
-			if (document.location.pathname.slice(-1) === "/") {
+			if (document.location.pathname.slice(-1) === "/" || document.location.pathname.slice(-10) === "index.html") {
 				hiddenMenuImg.setAttribute("src", "./images/hamburger-menu(2).svg");
 			} else {
 				hiddenMenuImg.setAttribute("src", "../images/hamburger-menu(2).svg");
@@ -41,7 +41,7 @@ function menuWindow() {
 			mobileNavMenu.style.zIndex = "-1";
 			mobileNavMenu.style.opacity = "0";
 			scrollArea.style.height = "100%";
-			if (document.location.pathname.slice(-1) === "/") {
+			if (document.location.pathname.slice(-1) === "/" || document.location.pathname.slice(-10) === "index.html") {
 				hiddenMenuImg.setAttribute("src", "./images/hamburger-menu(2).svg");
 			} else {
 				hiddenMenuImg.setAttribute("src", "../images/hamburger-menu(2).svg");
@@ -67,7 +67,7 @@ function searchWindow() {
 			scrollArea.style.height = "100vh";
 			hiddenMenuImg.style.opacity = "0";
 			hiddenMenuImg.style.zIndex = "-1";
-			if (document.location.pathname.slice(-1) === "/") {
+			if (document.location.pathname.slice(-1) === "/" || document.location.pathname.slice(-10) === "index.html") {
 				searchImg.setAttribute("src", "./images/cross.svg");
 			} else {
 				searchImg.setAttribute("src", "../images/cross.svg");
@@ -80,7 +80,7 @@ function searchWindow() {
 			scrollArea.style.height = "100%";
 			hiddenMenuImg.style.opacity = "1";
 			hiddenMenuImg.style.zIndex = "1";
-			if (document.location.pathname.slice(-1) === "/") {
+			if (document.location.pathname.slice(-1) === "/" || document.location.pathname.slice(-10) === "index.html") {
 				searchImg.setAttribute("src", "./images/search.svg");
 			} else {
 				searchImg.setAttribute("src", "../images/search.svg");
