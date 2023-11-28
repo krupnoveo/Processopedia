@@ -1,14 +1,10 @@
 "use strict"
 
 document.addEventListener("DOMContentLoaded", function () {
-    document.body.style.opacity = "0";
-    window.onload = function () {
-        document.body.style.opacity = "1";
-        views();
-        like();
-        dislike();
-        comments();
-    }
+    views();
+    like();
+    dislike();
+    comments();
 });
 
 function views() {
