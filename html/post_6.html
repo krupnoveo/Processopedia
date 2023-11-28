@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+  <link rel="stylesheet" href="../css/headerFooter.css" type="text/css">
+  <link rel="stylesheet" href="../css/encyclopediaArticle.css" type="text/css">
+  <link rel="stylesheet" href="../css/post.css" type="text/css">
+  <link rel="icon" href="../images/logo.svg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  <title>В Китае разработали собственную архитектуру процессоров LoongArch
+  </title>
+  <script src="../js/headerFooter.js"></script>
+  <script src="../js/post.js"></script>
+</head>
+<body>
+<div class="scroll-area">
+  <header>
+    <div id = "headerContainer">
+      <div class="hiddenMenuButton">
+        <img id="hiddenMenuImg" src="../images/hamburger-menu(2).svg">
+      </div>
+      <div class="mobileNavMenuContainer">
+        <nav id="mobileNavMenu">
+          <ul>
+            <li>
+              <a href="aboutUs.html">
+                <p>О проекте</p>
+              </a>
+            </li>
+            <li>
+              <a href="encyclopedia.html">
+                <p>Справка</p>
+              </a>
+            </li>
+            <li>
+              <a href="news.html">
+                <p>Новости</p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div id="logoAndNameContainer">
+        <a href="news.html">
+          <img src="../images/logo.svg">
+          <p>processopedia</p>
+        </a>
+      </div>
+      <nav id="desktopNavMenu">
+        <ul>
+          <li>
+            <a href="aboutUs.html">
+              <p>О проекте</p>
+            </a>
+          </li>
+          <li>
+            <a href="encyclopedia.html">
+              <p>Справка</p>
+            </a>
+          </li>
+          <li>
+            <a href="news.html">
+              <p>Новости</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <search>
+        <div id="searchContainer">
+          <img id="searchImg" src="../images/search.svg">
+        </div>
+        <div id="searchWindow">
+          <div class="searchFieldContainer">
+            <input id="searchField" type="search" placeholder="Поиск">
+            <img src="../images/right-arrow(1).svg">
+          </div>
+        </div>
+      </search>
+    </div>
+  </header>
+  <main>
+    <article id="articleContainer">
+      <div class="textOfArticle">
+        <div class="stamp">
+          <div id="author">
+            <img src="../images/author.svg">
+            <p>Евгений Крупнов</p>
+          </div>
+          <div id="time">
+            <img src="../images/clock.svg">
+            <p>27 ноября 2023</p>
+          </div>
+          <div id="commentsCounter">
+            <img src="../images/comment.svg">
+            <p id="commentsCounterStamp">0</p>
+          </div>
+          <div id="viewsCounter">
+            <img src="../images/views.svg">
+            <p id="viewsCount">0</p>
+          </div>
+        </div>
+        <h1>В Китае разработали собственную архитектуру процессоров LoongArch</h1>
+        <p class="thesis">Процессор создан ради самодостаточности на рынке полупроводников.</p>
+      </div>
+      <img id="previewImg" src="../images/post_6_preview.png">
+      <p class="labelForImg"></p>
+      <div class="textOfArticle">
+        <p class="text">Китайская компания Loongson Technology разработала собственную архитектуру Loongson Architecture (LoongArch) процессоров для настольных и серверных компьютеров. Компания сообщила об этом в официальном канале WeChat.</p>
+        <h2>Чем отличается?</h2>
+        <p class="text">Новая RISC-архитектура содержит порядка двух тысяч специально созданных инструкций. Как сообщает PC Watch, в дополнение к базовому набору команд архитектура может выполнять инструкции расширения двоичного преобразования (LBT), инструкции расширения векторной обработки (LSX), инструкции расширения продвинутой векторной обработки (LASX) и инструкции расширения виртуализации (LVZ).</p>
+        <p class="text">Самое удивительное, что уже существуют процессоры, которые работают на LoongArch: Loongson 3A5000 и 3C5000. Первый выпускается с 2020 года, второй поступит в продажу в первой половине года. Loongson 3A5000 построен по 12-нм техпроцессу, у него 4 ядра по 2,5 ГГц. Он предназначен для использования в настольных компьютерах.</p>
+        <p class="text">Процессор 3C5000 создан для работы в серверах. У него 16 ядер. При этом на одной плате можно объединить 16 таких процессоров.</p>
+        <img src="../images/post_6_cpu.jpeg">
+        <p class="labelForImg"></p>
+        <h2>Зачем нужно?</h2>
+        <p class="text">Ранее компания выпускала процессоры на архитектуре LoongISA, являющейся ответвлением MIPS64. Однако в этой архитектуре, как и в ARM или x86, есть одна общая проблема: они все разработаны или придуманы на Западе. А в современном мире, где КНР ведёт торговую войну с США, нужны собственные решения, не зависящие от санкций извне. Именно поэтому архитектура LoongArch, по заверениям компании, не нарушает ни одного западного патента.</p>
+        <p class="text">Китай сейчас пытается стать независимым от западных разработок. Для этого даже существует программа «Сделано в Китае», которая предполагает, что к 2025 году страна станет самодостаточной на рынке полупроводников.</p>
+        <p class="text">Несмотря на выпуск LoongArch, Loongson Technology всё ещё имеет запасной вариант в виде RISC-V. Это свободно распространяемая архитектура, которая разрабатывается с 2015 года. Ранее у компании был план создания процессоров на RISC-V, но пока выбор сделан в пользу собственной архитектуры.</p>
+        <div id="marks">
+          <div id="like">
+            <button id="likeBtn">
+              <img src="../images/like.svg">
+            </button>
+            <p>0</p>
+          </div>
+          <div id="dislike">
+            <button id="dislikeBtn">
+              <img src="../images/dislike.svg">
+            </button>
+            <p>0</p>
+          </div>
+        </div>
+        <div id="comments">
+          <p><span id="commentsCounterVisualizer">0</span> комментари<span id="commentsCounterWordEnding">ев</span></p>
+          <div>
+            <div id="alertForName">Введите имя</div>
+            <input id="inputName" type="text" placeholder="Ваше имя">
+            <textarea id="inputText" placeholder="Оставьте свой комментарий..."></textarea>
+            <div id="alertForText">Введите текст</div>
+          </div>
+          <div id="send">
+            <p id="sendText">Опубликовать</p>
+            <img id="sendImg" src="../images/paper-plane.svg">
+          </div>
+          <ul id="commentsList">
+
+          </ul>
+        </div>
+      </div>
+    </article>
+  </main>
+  <footer>
+    <div id="footerContainer">
+      <div id="about">
+        <p id="aboutTitle">processopedia</p>
+        <p>Рассказываем о новостях в мире микроэлектроники и объясняем как это устроено</p>
+      </div>
+      <div id="navAndContactsContainer">
+        <div id="navigation">
+          <p class="titleForBottomList">Навигация</p>
+          <ul>
+            <li>
+              <a href="aboutUs.html">
+                <p>О проекте</p>
+              </a>
+            </li>
+            <li>
+              <a href="encyclopedia.html">
+                <p>Справка</p>
+              </a>
+            </li>
+            <li>
+              <a href="news.html">
+                <p>Новости</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div id="contacts">
+          <p class="titleForBottomList">Контакты</p>
+          <ul>
+            <li>
+              <a href="tel:+7(916)403-39-05">
+                <img src="../images/phone.svg">
+                <p>+7(916)403-39-05</p>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:chucknorristhegreat@yandex.ru">
+                <img src="../images/mail.svg">
+                <p>chucknorristhegreat@yandex.ru</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

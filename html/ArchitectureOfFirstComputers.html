@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+  <link rel="stylesheet" href="../css/headerFooter.css" type="text/css">
+  <link rel="stylesheet" href="../css/encyclopediaArticle.css" type="text/css">
+  <link rel="icon" href="../images/logo.svg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  <title>Архитектура первых компьютеров</title>
+  <script src="../js/headerFooter.js"></script>
+</head>
+<body>
+<div class="scroll-area">
+  <header>
+    <div id = "headerContainer">
+      <div class="hiddenMenuButton">
+        <img id="hiddenMenuImg" src="../images/hamburger-menu(2).svg">
+      </div>
+      <div class="mobileNavMenuContainer">
+        <nav id="mobileNavMenu">
+          <ul>
+            <li>
+              <a href="aboutUs.html">
+                <p>О проекте</p>
+              </a>
+            </li>
+            <li>
+              <a href="encyclopedia.html">
+                <p>Справка</p>
+              </a>
+            </li>
+            <li>
+              <a href="news.html">
+                <p>Новости</p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div id="logoAndNameContainer">
+        <a href="news.html">
+          <img src="../images/logo.svg">
+          <p>processopedia</p>
+        </a>
+      </div>
+      <nav id="desktopNavMenu">
+        <ul>
+          <li>
+            <a href="aboutUs.html">
+              <p>О проекте</p>
+            </a>
+          </li>
+          <li>
+            <a href="encyclopedia.html">
+              <p>Справка</p>
+            </a>
+          </li>
+          <li>
+            <a href="news.html">
+              <p>Новости</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <search>
+        <div id="searchContainer">
+          <img id="searchImg" src="../images/search.svg">
+        </div>
+        <div id="searchWindow">
+          <div class="searchFieldContainer">
+            <input id="searchField" type="search" placeholder="Поиск">
+            <img src="../images/right-arrow(1).svg">
+          </div>
+        </div>
+      </search>
+    </div>
+  </header>
+  <main>
+    <article id="articleContainer">
+      <div class="textOfArticle">
+        <h1>Архитектура первых компьютеров</h1>
+        <p class="text">В предыдущей статье была рассмотрено внутреннее устройство компьютеров, на заре их появления. А сейчас давайте узнаем, как была устроена архитектура машин того времени.</p>
+        <h2>Архитектура фон Неймана</h2>
+        <p class="text">Архитектура фон Неймана строилась на следующих принципах:</p>
+        <ul>
+          <li class="text">Принцип двоичности: информация в компьютере представляется в виде двоичного кода.</li>
+          <li class="text">Принцип программного управления: программа представляет собой набор команд, которые процессор выполняет друг за другом в определенном порядке.</li>
+          <li class="text">Принцип однородности памяти: программы и данные хранятся вместе в памяти компьютера.</li>
+          <li class="text">Принцип адресуемости памяти: память состоит из пронумерованных ячеек, к которым процессор в произвольным момент времени имеет доступ.</li>
+          <li class="text">Принцип условного перехода: в программе возможно присутствие команд условного перехода, которые изменяют последовательность выполнения команд.</li>
+        </ul>
+        <p class="text">Основным недостатком этой архитектуры является ограничение пропускной способности между памятью и процессором. Из-за того, что программа и данные не могут считываться одновременно, пропускная способность между памятью и процессором существенно ограничивает скорость работы процессора. В дальнейшем, данную проблему решили с помощью введения кеша, что вызвало другие проблемы(например, уязвимость Meltdown).</p>
+        <p class="text">Справедливости ради необходимо уточнить, что данные идеи не являются идеями Джона фон Неймана в полной степени. Также в их разработке участвовали ещё несколько ученых, пионеров компьютерной техники: Джон Преспер Экерт и Джон Уильям Мокли.</p>
+        <h2>Гарвардская архитектура</h2>
+        <p class="text">Гарвардская архитектура была разработана в 30-е годы прошлого века Говардом Эйкеном в Гарвардском университете (Невероятно, но факт). В отличии от архитектуры фон Неймана, Гарвардская подразумевала разные хранилища для данных и инструкций, а также разные каналы их передачи. Такой подход позволял одновременно считывать команда из программы и данные из памяти, что вело к значительному увеличению общей производительности компьютера. Но, в тоже время, такая схема усложняет саму систему. В дальнейшем Гарвардская архитектура проиграла архитектуре фон Неймана, отчасти из-за этого фактора.</p>
+        <img src="../images/GarvardArchitecture.png">
+        <p class="labelForImg">Гарвардская архитектура</p>
+        <h2>Итог</h2>
+        <p class="text">Фон Нейман - это поистине великий изобретатель. Именно его архиктетура в результате стала использоваться в компьютерах не только того времени, но и заложила фундамент для построения архитектур уже в современных процессорах.</p>
+      </div>
+      <div id="bottomNavigation">
+        <a id="backButton" href="ComponentsOfFirstComputers.html">
+          <img src="../images/right-arrow(1).svg">
+          <p>Назад</p>
+        </a>
+        <a id="nextButton" href="FirstProgrammingLanguages.html">
+          <p>Далее</p>
+          <img src="../images/right-arrow(1).svg">
+        </a>
+      </div>
+    </article>
+  </main>
+  <footer>
+    <div id="footerContainer">
+      <div id="about">
+        <p id="aboutTitle">processopedia</p>
+        <p>Рассказываем о новостях в мире микроэлектроники и объясняем как это устроено</p>
+      </div>
+      <div id="navAndContactsContainer">
+        <div id="navigation">
+          <p class="titleForBottomList">Навигация</p>
+          <ul>
+            <li>
+              <a href="aboutUs.html">
+                <p>О проекте</p>
+              </a>
+            </li>
+            <li>
+              <a href="encyclopedia.html">
+                <p>Справка</p>
+              </a>
+            </li>
+            <li>
+              <a href="news.html">
+                <p>Новости</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div id="contacts">
+          <p class="titleForBottomList">Контакты</p>
+          <ul>
+            <li>
+              <a href="tel:+7(916)403-39-05">
+                <img src="../images/phone.svg">
+                <p>+7(916)403-39-05</p>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:chucknorristhegreat@yandex.ru">
+                <img src="../images/mail.svg">
+                <p>chucknorristhegreat@yandex.ru</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

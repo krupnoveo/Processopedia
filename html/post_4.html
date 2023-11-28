@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+  <link rel="stylesheet" href="../css/headerFooter.css" type="text/css">
+  <link rel="stylesheet" href="../css/encyclopediaArticle.css" type="text/css">
+  <link rel="stylesheet" href="../css/post.css" type="text/css">
+  <link rel="icon" href="../images/logo.svg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  <title>ARM представила мобильный графический процессор с поддержкой трассировки лучей</title>
+  <script src="../js/headerFooter.js"></script>
+  <script src="../js/post.js"></script>
+</head>
+<body>
+<div class="scroll-area">
+  <header>
+    <div id = "headerContainer">
+      <div class="hiddenMenuButton">
+        <img id="hiddenMenuImg" src="../images/hamburger-menu(2).svg">
+      </div>
+      <div class="mobileNavMenuContainer">
+        <nav id="mobileNavMenu">
+          <ul>
+            <li>
+              <a href="aboutUs.html">
+                <p>О проекте</p>
+              </a>
+            </li>
+            <li>
+              <a href="encyclopedia.html">
+                <p>Справка</p>
+              </a>
+            </li>
+            <li>
+              <a href="news.html">
+                <p>Новости</p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div id="logoAndNameContainer">
+        <a href="news.html">
+          <img src="../images/logo.svg">
+          <p>processopedia</p>
+        </a>
+      </div>
+      <nav id="desktopNavMenu">
+        <ul>
+          <li>
+            <a href="aboutUs.html">
+              <p>О проекте</p>
+            </a>
+          </li>
+          <li>
+            <a href="encyclopedia.html">
+              <p>Справка</p>
+            </a>
+          </li>
+          <li>
+            <a href="news.html">
+              <p>Новости</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <search>
+        <div id="searchContainer">
+          <img id="searchImg" src="../images/search.svg">
+        </div>
+        <div id="searchWindow">
+          <div class="searchFieldContainer">
+            <input id="searchField" type="search" placeholder="Поиск">
+            <img src="../images/right-arrow(1).svg">
+          </div>
+        </div>
+      </search>
+    </div>
+  </header>
+  <main>
+    <article id="articleContainer">
+      <div class="textOfArticle">
+        <div class="stamp">
+          <div id="author">
+            <img src="../images/author.svg">
+            <p>Евгений Крупнов</p>
+          </div>
+          <div id="time">
+            <img src="../images/clock.svg">
+            <p>27 ноября 2023</p>
+          </div>
+          <div id="commentsCounter">
+            <img src="../images/comment.svg">
+            <p id="commentsCounterStamp">0</p>
+          </div>
+          <div id="viewsCounter">
+            <img src="../images/views.svg">
+            <p id="viewsCount">0</p>
+          </div>
+        </div>
+        <h1>ARM представила мобильный графический процессор с поддержкой трассировки лучей</h1>
+        <p class="thesis">Первые смартфоны с этим чипом появятся в конце года.</p>
+      </div>
+      <img id="previewImg" src="../images/post_4_arm.png">
+      <p class="labelForImg"></p>
+      <div class="textOfArticle">
+        <p class="text">Компания ARM анонсировала свой первый мобильный графический чип с поддержкой аппаратного ускорения трассировки лучей.</p>
+        <p class="text">Immortalis-G715 не первый чип на рынке, который поддерживает эту технологию — первенство за Samsung и чипами Exynos 2200 с графикой Xclipse на архитектуре RDNA2, которую создала AMD.</p>
+        <p class="text">Базовая версия Immortalis-G715 оснащена 10 шейдерными ядрами, но также появятся модификации с 16 ядрами. ARM утверждает, что чип на 15&nbsp;% быстрее и энергоэффективнее Mali-G710, а включение VRS может обеспечить дополнительный прирост производительности до 40 %.</p>
+        <p class="text">Первые смартфоны с графикой Immortalis-G715 поступят в продажу в конце этого – начале следующего года.</p>
+        <img src="../images/post_4_armChips.png">
+        <p class="labelForImg"></p>
+        <p class="text">Также компания представила два графических процессора Mali-G715 и Mali-G615 без аппаратного ускорения трассировки лучей, но с VRS. Первый чип получит от семи до девяти шейдерных ядер, второй — шесть и менее. Никаких графиков и сравнений компания не предоставила.</p>
+        <div id="marks">
+          <div id="like">
+            <button id="likeBtn">
+              <img src="../images/like.svg">
+            </button>
+            <p>0</p>
+          </div>
+          <div id="dislike">
+            <button id="dislikeBtn">
+              <img src="../images/dislike.svg">
+            </button>
+            <p>0</p>
+          </div>
+        </div>
+        <div id="comments">
+          <p><span id="commentsCounterVisualizer">0</span> комментари<span id="commentsCounterWordEnding">ев</span></p>
+          <div>
+            <div id="alertForName">Введите имя</div>
+            <input id="inputName" type="text" placeholder="Ваше имя">
+            <textarea id="inputText" placeholder="Оставьте свой комментарий..."></textarea>
+            <div id="alertForText">Введите текст</div>
+          </div>
+          <div id="send">
+            <p id="sendText">Опубликовать</p>
+            <img id="sendImg" src="../images/paper-plane.svg">
+          </div>
+          <ul id="commentsList">
+
+          </ul>
+        </div>
+      </div>
+    </article>
+  </main>
+  <footer>
+    <div id="footerContainer">
+      <div id="about">
+        <p id="aboutTitle">processopedia</p>
+        <p>Рассказываем о новостях в мире микроэлектроники и объясняем как это устроено</p>
+      </div>
+      <div id="navAndContactsContainer">
+        <div id="navigation">
+          <p class="titleForBottomList">Навигация</p>
+          <ul>
+            <li>
+              <a href="aboutUs.html">
+                <p>О проекте</p>
+              </a>
+            </li>
+            <li>
+              <a href="encyclopedia.html">
+                <p>Справка</p>
+              </a>
+            </li>
+            <li>
+              <a href="news.html">
+                <p>Новости</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div id="contacts">
+          <p class="titleForBottomList">Контакты</p>
+          <ul>
+            <li>
+              <a href="tel:+7(916)403-39-05">
+                <img src="../images/phone.svg">
+                <p>+7(916)403-39-05</p>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:chucknorristhegreat@yandex.ru">
+                <img src="../images/mail.svg">
+                <p>chucknorristhegreat@yandex.ru</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

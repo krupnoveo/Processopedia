@@ -1,0 +1,337 @@
+#articleContainer{
+    margin-top: 56px;
+}
+.stamp{
+    display: flex;
+    justify-content: start;
+    margin-bottom: 10px;
+}
+.stamp p{
+    margin: 0;
+    font-size: 12px;
+    color: #5c5c5c;
+    font-weight: 400;
+}
+.stamp div{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-right: 20px;
+}
+iframe{
+    width: 100%;
+    height: 50vw;
+    max-height: 400px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+blockquote{
+    padding: 48px 48px 24px;
+    border-radius: 10px;
+    background-color: #dadada;
+    margin: 0 0 30px;
+}
+.quotingText{
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 24px;
+    margin-top: 0;
+}
+.quotingSource{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 24px;
+}
+.quotingSourcePosition{
+    font-size: 14px;
+    line-height: 18px;
+    color: #5c5c5c;
+    margin-top: -18px;
+    margin-bottom: 24px;
+}
+.stamp img {
+    width: 20px;
+    height: 20px;
+    filter: contrast(0);
+    margin-top: 0;
+    margin-right: 8px;
+}
+.thesis{
+    font-size: 22px;
+    line-height: 34px;
+    color: #5c5c5c;
+    margin-bottom: 40px;
+    font-weight: 400;
+    margin-top: 0;
+}
+h1{
+    margin-bottom: 12px;
+}
+#previewImg {
+    width: 100%;
+    object-fit: cover;
+    flex: 1 1 auto;
+    border-radius: 20px;
+    pointer-events: none;
+}
+table{
+    width: 100%;
+    flex: 1 1 auto;
+    border: 1px solid #eaecef;
+    border-collapse: collapse;
+    font-size: 15px;
+}
+table tr:nth-child(3) {
+    background-color: white;
+}
+table tr, table td, table th{
+    border: 1px solid #eaecef;
+    padding: 10px;
+}
+#marks{
+    display: flex;
+    float: right;
+    margin-top: 30px;
+}
+#marks button {
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+#marks div{
+    display: flex;
+    margin-left: 20px;
+}
+#marks img{
+    width: 20px;
+    height: 20px;
+    margin-top: 0;
+}
+
+#comments{
+    margin-top: 150px;
+    color: var(--color_of_text);
+    display: flex;
+    flex-direction: column;
+}
+#comments > p{
+    font-size: 20px;
+    margin-bottom: 30px;
+    padding-left: 10px;
+}
+#comments div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+}
+#comments div:nth-child(3) {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    width: fit-content;
+    align-self: end;
+}
+#sendImg {
+    margin-top: 0;
+    width: 18px;
+    height: 18px;
+    filter: contrast(0);
+}
+#sendText{
+    font-size: 16px;
+    font-weight: 400;
+}
+#comments p{
+    margin: 0 10px 0 0;
+}
+#comments > div{
+    position: relative;
+}
+#comments ul{
+    padding: 0;
+    margin-top: 30px;
+    margin-left: 0;
+    list-style-type: none;
+}
+#comments input, #comments textarea{
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding: 20px;
+    background: #e8e8e8;
+}
+#comments input::placeholder, #comments textarea::placeholder{
+    color: #a2a2a2;
+}
+#comments input {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 2px;
+    margin-top: 20px;
+}
+#alertForName{
+    position: absolute;
+    opacity: 0;
+    top: 12px;
+    left: 20px;
+    color: red;
+    font-size: 12px;
+    background: #e8e8e8;
+    padding: 1px 4px;
+    border-radius: 10px;
+    border: solid 1px red;
+}
+#alertForText{
+    position: absolute;
+    opacity: 0;
+    bottom: -8px;
+    left: 20px;
+    color: red;
+    font-size: 12px;
+    background: #e8e8e8;
+    padding: 1px 4px;
+    border-radius: 10px;
+    border: solid 1px red;
+}
+#comments textarea {
+    font-family: 'Roboto', sans-serif;
+    border-bottom-left-radius: 10px;
+    resize: none;
+}
+
+#comments > button{
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 20px;
+    padding-bottom: 10px;
+    position: relative;
+}
+.comment{
+    background: #e8e8e8;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+.comment img{
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+}
+.comment button{
+    background: transparent;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    height: fit-content;
+    padding-right: 0;
+    padding-left: 0;
+    align-self: center;
+    transition: all ease-in-out .1s;
+}
+.comment button:hover{
+    background: #c2c2c2;
+}
+.comment div{
+    margin-right: 40px;
+}
+.commentName{
+    font-size: 14px;
+    padding-bottom: 16px;
+    font-weight: 500;
+    color: var(--color_of_text);
+}
+.commentText{
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--color_of_text);
+}
+.comment div{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+#send {
+    position: relative;
+    padding: 10px;
+    overflow: hidden;
+    border: 2px solid #e8e8e8;
+    border-top: none;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: transparent;
+    transition: all ease-in-out .2s;
+}
+#send:hover{
+    background:#e8e8e8;
+}
+
+@media(max-width: 899px){
+    .thesis{
+        font-size: 19px;
+        line-height: 24px;
+    }
+    #comments input, #comments textarea{
+        font-size: 16px;
+    }
+    #comments > p {
+        font-size: 16px;
+    }
+    .commentName{
+        font-size: 12px;
+        padding-bottom: 10px;
+    }
+    .commentText{
+        font-size: 15px;
+    }
+    .comment{
+        padding: 16px;
+    }
+    #sendText{
+        font-size: 14px;
+    }
+    #sendImg{
+        width: 16px;
+        height: 16px;
+    }
+}
+
+@media(max-width: 649px) {
+    table{
+        font-size: 12px;
+    }
+}
+@media(max-width: 599px){
+    .thesis{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    #comments input, #comments textarea{
+        font-size: 14px;
+    }
+    #comments > p {
+        font-size: 14px;
+    }
+    .comment{
+        padding: 16px;
+    }
+    #commentsCounter, #viewsCounter{
+        display: none;
+    }
+    .quotingText{
+        font-size: 16px!important;
+        line-height: 28px!important;
+        margin-bottom: 16px!important;
+    }
+    .quotingSource{
+        font-size: 14px;
+    }
+    .quotingSourcePosition{
+        font-size: 12px;
+    }
+    blockquote{
+        padding: 28px 16px 14px;
+    }
+}

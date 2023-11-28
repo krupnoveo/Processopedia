@@ -1,0 +1,209 @@
+main {
+    font-family: 'Roboto', sans-serif;
+    color: var(--color_of_text);
+}
+#articleContainer{
+    max-width: 1240px;
+    margin: 88px var(--margin_for_headerFooterMain);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#articleContainer ul{
+    padding: 0;
+    margin: 0 0 30px 20px;
+}
+#articleContainer li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#articleContainer h1 {
+    font-size: 52px;
+    line-height: 56px;
+    letter-spacing: -0.2px;
+    margin-top: 0;
+}
+#articleContainer h2{
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 32px;
+    margin-top: 72px;
+}
+#articleContainer h3{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 26px;
+    margin-top: 42px;
+    margin-bottom: 16px;
+}
+#articleContainer h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.textOfArticle{
+    max-width: 744px;
+}
+.textOfArticle > img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    flex: 1 1 auto;
+    margin-top: 30px;
+    pointer-events: none;
+}
+.text{
+    font-size: 20px;
+    line-height: 36px;
+    margin-top: 0;
+}
+
+.labelForImg{
+    font-size: 16px;
+    color: #7a7a7a;
+    margin-bottom: 24px;
+}
+#bottomNavigation{
+    width: 100%;
+    margin: 40px var(--margin_for_headerFooterMain) 0 var(--margin_for_headerFooterMain);
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+#bottomNavigation img {
+    width: 24px;
+    height: 24px;
+    filter: contrast(0);
+    align-self: center;
+}
+#nextButton{
+    display: flex;
+    float: right;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#nextButton p{
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--color_of_text);
+    margin: 0 16px 0 0;
+}
+#nextButton::after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: -130%;
+    width: 120%;
+    height: 1px;
+    background-color: rgb(173, 174, 173);
+    transition: all ease-in-out .2s;
+}
+#backButton{
+    display: flex;
+    float: left;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#backButton p{
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--color_of_text);
+    margin: 0 0 0 16px;
+}
+#backButton::after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: -130%;
+    width: 120%;
+    height: 1px;
+    background-color: rgb(173, 174, 173);
+    transition: all ease-in-out .2s;
+}
+#nextButton:hover::after{
+    left: -10%;
+}
+#backButton:hover::after{
+    right: -10%;
+}
+#backButton img{
+    transform: rotate(180deg);
+}
+@media(max-width: 899px) {
+    #articleContainer h1{
+        font-size: 44px;
+        line-height: 46px;
+    }
+    #articleContainer h2{
+        font-size: 26px;
+        line-height: 28px;
+        margin-top: 50px;
+    }
+    #articleContainer h3{
+        font-size: 22px;
+        margin-top: 28px;
+        margin-bottom: 10px;
+    }
+    #articleContainer h4{
+        font-size: 18px;
+    }
+    .text{
+        font-size: 18px;
+        line-height: 32px;
+    }
+}
+@media (max-width: 599px) {
+    #articleContainer h1{
+        font-size: 24px;
+        line-height: 28px;
+    }
+    #articleContainer h2{
+        font-size: 22px;
+        line-height: 24px;
+        margin-top: 40px;
+    }
+    #articleContainer h3{
+        font-size: 19px;
+        margin-top: 22px;
+        margin-bottom: 10px;
+    }
+    #articleContainer h4{
+        font-size: 16px;
+    }
+    .text{
+        font-size: 16px;
+        line-height: 28px;
+    }
+    #articleContainer {
+        margin-top: 48px;
+    }
+    .labelForImg{
+        font-size: 14px;
+    }
+    .textOfArticle > img{
+        margin-top: 20px;
+    }
+    #nextButton p, #backButton p{
+        font-size: 18px;
+    }
+    #bottomNavigation img {
+        width: 20px;
+        height: 20px;
+    }
+    #bottomNavigation {
+        padding: 0;
+    }
+}

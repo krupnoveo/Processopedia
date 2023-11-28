@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+    <link rel="stylesheet" href="../css/headerFooter.css" type="text/css">
+    <link rel="stylesheet" href="../css/encyclopediaArticle.css" type="text/css">
+    <link rel="icon" href="../images/logo.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <title>Первые языки программирования</title>
+    <script src="../js/headerFooter.js"></script>
+</head>
+<body>
+<div class="scroll-area">
+    <header>
+        <div id = "headerContainer">
+            <div class="hiddenMenuButton">
+                <img id="hiddenMenuImg" src="../images/hamburger-menu(2).svg">
+            </div>
+            <div class="mobileNavMenuContainer">
+                <nav id="mobileNavMenu">
+                    <ul>
+                        <li>
+                            <a href="aboutUs.html">
+                                <p>О проекте</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="encyclopedia.html">
+                                <p>Справка</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="news.html">
+                                <p>Новости</p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="logoAndNameContainer">
+                <a href="news.html">
+                    <img src="../images/logo.svg">
+                    <p>processopedia</p>
+                </a>
+            </div>
+            <nav id="desktopNavMenu">
+                <ul>
+                    <li>
+                        <a href="aboutUs.html">
+                            <p>О проекте</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="encyclopedia.html">
+                            <p>Справка</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="news.html">
+                            <p>Новости</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <search>
+                <div id="searchContainer">
+                    <img id="searchImg" src="../images/search.svg">
+                </div>
+                <div id="searchWindow">
+                    <div class="searchFieldContainer">
+                        <input id="searchField" type="search" placeholder="Поиск">
+                        <img src="../images/right-arrow(1).svg">
+                    </div>
+                </div>
+            </search>
+        </div>
+    </header>
+    <main>
+        <article id="articleContainer">
+            <div class="textOfArticle">
+                <h1>Первые языки программирования</h1>
+                <p class="text">В предыдущей статье была рассмотрена архитектура компьютеров, которая в итоге легла в основу современных вычислительных машин. Но эти машины не могли работать без указаний. Рассмотрим как и с помощью чего они их получали.</p>
+                <p class="text">В самых первых компьютерах программы считывались с перфоленты (как в Z3 и Mark I). Устройство чтения перфоленты предоставляло управляющему устройство код операции для каждой инструкции и адреса памяти. Затем управляющее устройство все это декодировало, посылало управляющие сигналы вычислительному блоку и памяти. Набор инструкций жестко задавался в схеме, каждая машинная инструкция (сложение, сдвиг, копирование) реализовывалась непосредственно в схеме. В ENIAC для изменения программы его нужно было перекоммутировать заново, на что уходило значительное время. Машинные коды считают первым поколением языков программирования. </p>
+                <img src="../images/PerforirovannayaLenta.png">
+                <p class="labelForImg">Перфорированная лента с программой вычислений</p>
+                <p class="text">Первые программисты всегда имели при себе блокнот, в который они записывали наиболее употребляемые подпрограммы — независимые фрагменты программы, вызываемые из главной подпрограммы, например извлечение корня или вывод символа на дисплей. Проблема состояла в том, что адреса расположения переменных и команд менялись в зависимости от размещения в главной программе. Для решения этой проблемы кембриджские программисты разработали набор унифицированных подпрограмм (библиотеку), которая автоматически настраивали и размещали подпрограммы в памяти. Морис Уилкс, один из разработчиков EDSAC (первого практически реализованного компьютера с хранимой в памяти программой), назвал библиотеку подпрограмм собирающей системой (assembly system). Теперь не нужно было собирать программу вручную из машинных кодов, специальная программа (ассемблер) «автоматически» собирала программу. Первые ассемблеры спроектированы Кэтлин Бут в 1947 под ARC2 и Дэвидом Уилером в 1948 под EDSAC. При этом сам язык (мнемоники) называли просто множеством базовых команд или начальными командами. Использовать слово «ассемблер» для процесса объединения полей в командное слово начали в поздних отчетах по EDSAC. Ассемблер можно назвать вторым поколением языков. </p>
+                <img src="../images/EDSACcommands.png">
+                <p class="labelForImg">«Начальные команды» для EDSAC</p>
+                <h2>Итог</h2>
+                <p class="text">Компьютеры не могут работать без подачи внешних указаний человеком. На заре появления программируемых компьютеров делать это было очень сложно. Намного сложнее, чем сейчас. Поэтому следует сказать спасибо тем изобретателям и учёным, которые смогли сделать программирование компьютеров прозрачнее.</p>
+            </div>
+            <div id="bottomNavigation">
+                <a id="backButton" href="ArchitectureOfFirstComputers.html">
+                    <img src="../images/right-arrow(1).svg">
+                    <p>Назад</p>
+                </a>
+                <a id="nextButton" href="ComputersOfUSSR.html">
+                    <p>Далее</p>
+                    <img src="../images/right-arrow(1).svg">
+                </a>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <div id="footerContainer">
+            <div id="about">
+                <p id="aboutTitle">processopedia</p>
+                <p>Рассказываем о новостях в мире микроэлектроники и объясняем как это устроено</p>
+            </div>
+            <div id="navAndContactsContainer">
+                <div id="navigation">
+                    <p class="titleForBottomList">Навигация</p>
+                    <ul>
+                        <li>
+                            <a href="aboutUs.html">
+                                <p>О проекте</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="encyclopedia.html">
+                                <p>Справка</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="news.html">
+                                <p>Новости</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="contacts">
+                    <p class="titleForBottomList">Контакты</p>
+                    <ul>
+                        <li>
+                            <a href="tel:+7(916)403-39-05">
+                                <img src="../images/phone.svg">
+                                <p>+7(916)403-39-05</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:chucknorristhegreat@yandex.ru">
+                                <img src="../images/mail.svg">
+                                <p>chucknorristhegreat@yandex.ru</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

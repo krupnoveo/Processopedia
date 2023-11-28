@@ -1,0 +1,344 @@
+:root{
+	--color_of_text: rgb(30, 30, 30);
+	--margin_for_headerFooterMain: 40px;
+}
+body, html {
+	margin: 0;
+	padding: 0;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	min-width: 320px;
+}
+.scroll-area{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	height: 100%;
+	overflow:hidden;
+}
+header{
+	display: flex;
+	justify-content: center;
+	padding: 24px 0;
+	height: 80px;
+	box-sizing: border-box;
+	background-color: white;
+}
+main {
+	background: linear-gradient(#fff, #f3f3f3);
+	flex-shrink: 0;
+	display: flex;
+	justify-content: center;
+	transition: all ease-in-out .2s;
+	transform: scale(1.0);
+	transition-delay: 0.05s;
+}
+footer {
+	display: flex;
+	justify-content: center;
+	padding: 80px 0;
+}
+a {
+	text-decoration: none;
+}
+#headerContainer{
+	width: 1240px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 0 var(--margin_for_headerFooterMain);
+}
+#logoAndNameContainer a{
+	display: flex;
+	flex-direction: row;
+	height: max-content;
+}
+#logoAndNameContainer img {
+	width: 32px;
+	height: 32px;
+}
+#logoAndNameContainer p {
+	position: relative;
+	font-size: 26px;
+	color: var(--color_of_text);
+	font-weight: 600;
+	margin: -2px 0 0 10px;
+	letter-spacing: 1px;
+}
+
+#desktopNavMenu {
+	display: flex;
+}
+#desktopNavMenu ul {
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	margin: 0;
+	padding: 0;
+}
+
+#desktopNavMenu p {
+	letter-spacing: 0.5px;
+	text-wrap: none;
+	margin: 7px 0 0;
+	color:var(--color_of_text);
+	transition: all ease-in-out .2s;
+}
+#desktopNavMenu p:hover{
+	color: #7a7a7a;
+}
+#desktopNavMenu li {
+	margin-left: 40px;
+}
+#searchContainer{
+	transition: all ease-in-out 0.2s;
+	opacity: 1;
+	z-index: 1;
+	position: relative;
+}
+#searchContainer img{
+	height: 17px;
+	width: 17px;
+	margin-top: 8px;
+}
+
+#footerContainer {
+	display: flex;
+	width: 1240px;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 0 var(--margin_for_headerFooterMain);
+}
+#about{
+	width: 300px;
+	flex-shrink: 0;
+}
+#about p:nth-child(2){
+	margin:0;
+	font-size: 18px;
+	color: #7a7a7a;
+	font-weight: 400;
+	letter-spacing: 0.5px;
+}
+#about p:nth-child(1){
+	font-size: 30px;
+	letter-spacing: 1px;
+	font-weight: 600;
+	margin-bottom: 20px;
+	margin-top: 0;
+	color: var(--color_of_text);
+}
+
+#navAndContactsContainer{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-left: 60px;
+	margin-right: 30px;
+}
+
+.titleForBottomList{
+	font-size: 20px;
+	color: #7a7a7a;
+	margin-top:0;
+}
+#navigation ul, #contacts ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+#navigation {
+	margin-right: 70px;
+	margin-bottom: 40px;
+}
+
+#navigation li p, #contacts li p {
+	color: var(--color_of_text);
+	margin: 0;
+	font-size: 18px;
+	transition: all ease-in-out .2s;
+}
+#navigation li p:hover {
+	color: #7a7a7a;
+}
+#contacts li a {
+	display: flex;
+	flex-direction: row;
+}
+#navigation li, #contacts li {
+	margin-top: 20px;
+}
+#contacts img {
+	width: 24px;
+	height: 24px;
+	margin-right: 10px;
+	filter: contrast(0.1);
+}
+.hiddenMenuButton{
+	display: none;
+}
+.mobileNavMenuContainer{
+	display: block;
+	position: absolute;
+	top: 80px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	z-index: -1;
+	opacity: 0;
+	transition: all ease-in-out .2s;
+}
+#mobileNavMenu {
+	padding-bottom: 300px;
+	background: linear-gradient(white 70%, transparent);
+	overflow-y: hidden;
+}
+#mobileNavMenu ul {
+	padding: 0;
+	list-style-type: none;
+	text-align: center;
+	margin: 60px 0 0;
+}
+#mobileNavMenu p {
+	color: var(--color_of_text);
+	font-size: 24px;
+	margin-bottom: 40px;
+	transition: all ease-in-out .2s;
+}
+
+#hiddenMenuImg {
+	height: 17px;
+	width: 17px;
+	margin-top: 50%;
+	cursor: pointer;
+}
+#searchImg{
+	cursor: pointer;
+}
+#searchWindow{
+	position: absolute;
+	top: 80px;
+	left: 0;
+	width: 100%;
+	min-width: 320px;
+	height: 100vh;
+	z-index: -1;
+	background: rgba(255,255,255,0.8);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	display: block;
+	opacity: 0;
+	padding-left: 100px;
+	padding-right: 100px;
+	box-sizing: border-box;
+	transition: all ease-in-out 0.2s;
+}
+.searchFieldContainer{
+	position: sticky;
+	width: 100%;
+	max-width: 1000px;
+	top: 300px;
+	left: calc((100vw - 1000px) / 2);
+	transition: all ease-in-out 0.2s;
+	opacity: 0;
+	transform: translateY(-40px);
+}
+
+.searchFieldContainerAnimation {
+	opacity: 1;
+	transform: translateY(0px);
+}
+
+#searchField{
+	position: relative;
+	outline: none;
+	border: none;
+	background: transparent;
+	font-size: 36px;
+	width: 100%;
+	padding: 0 70px 30px 20px;
+	border-bottom: 2px solid rgb(173, 174, 173);
+}
+#searchField::placeholder{
+	color: rgb(173, 174, 173);
+}
+#searchField::-webkit-search-cancel-button{
+	display: none;
+}
+.searchFieldContainer img {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 3px;
+	right: 0;
+	cursor: pointer;
+	filter: contrast(0);
+}
+
+@media(max-width: 899px) {
+	#desktopNavMenu {
+		display: none;
+	}
+	.hiddenMenuButton {
+		display: block;
+		z-index: 1;
+		opacity: 1;
+		transition: all ease-in-out .2s;
+	}
+	#searchWindow{
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+	#searchField{
+		font-size: 30px;
+		padding: 0 50px 15px 10px;
+	}
+	.searchFieldContainer img {
+		width: 30px;
+		height: 30px;
+	}
+}
+@media(max-width: 749px) {
+	#footerContainer{
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+	#about{
+		margin-bottom: 100px;
+		margin-left: 0;
+	}
+	#navAndContactsContainer{
+		margin-left: 0;
+	}
+}
+@media(max-width: 599px) {
+	:root{
+		--margin_for_headerFooterMain: 20px;
+	}
+	#searchWindow{
+		padding-top: 70px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	#searchField{
+		font-size: 24px;
+		padding: 0 40px 12px 8px;
+	}
+	.searchFieldContainer img {
+		width: 24px;
+		height: 24px;
+	}
+	#mobileNavMenu p{
+		font-size: 18px;
+		margin-bottom: 20px;
+	}
+	#mobileNavMenu ul{
+		margin-top: 20px;
+	}
+}
+@media(max-width: 349px) {
+	#logoAndNameContainer img {
+		display: none;
+	}
+}
