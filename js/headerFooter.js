@@ -97,6 +97,7 @@ function searchWindow() {
 	})
 }
 document.addEventListener("DOMContentLoaded", function() {
+	console.log(document.location.pathname);
 	menuWindow();
 	searchWindow();
 });
